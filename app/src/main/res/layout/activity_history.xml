@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_page" >
+
+    <RelativeLayout style="@style/topbar_bg" >
+
+        <ImageView style="@style/topbar_return_img" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="标题" />
+    </RelativeLayout>
+
+    <!-- 可以改为ListView，如果改的话对应DemoListActivity内也要改；padding会导致smoothScrollToPosition失效 -->
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/lvBaseList"
+        style="@style/lv" />
+
+</LinearLayout>
